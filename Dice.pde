@@ -7,16 +7,14 @@ void setup() {
     int col = i % 3;
     dice[i] = new Die(col * 50 + 10, row * 50 + 10);
   }
-  update();
+  noLoop();
 }
-
-void draw(){}
 
 void mouseClicked() {
-  update();
+  redraw();
 }
 
-void update() {
+void draw() {
   background(0);
   int tot = 0;
   for (int i = 0; i < dice.length; i++) {
