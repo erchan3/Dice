@@ -19,7 +19,7 @@ void draw() {
   int tot = 0;
   for (int i = 0; i < dice.length; i++) {
     dice[i].roll();
-    dice[i].draw();
+    dice[i].show();
     tot += dice[i].val;
   }
   fill(200);
@@ -41,7 +41,7 @@ class Die {
     val = (int)(Math.random() * 6) + 1;
   }
   
-  public void draw() {
+  public void show() {
     fill(255);
     rect(x, y, 40, 40, 10);
     fill(0);
