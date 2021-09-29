@@ -3,7 +3,7 @@ Die[] dice = new Die[9];
 void setup() {
   size(160, 200);
   for (int i = 0; i < dice.length; i++) {
-    int row = i / 3;
+    int row = (int)(i / 3);
     int col = i % 3;
     dice[i] = new Die(col * 50 + 10, row * 50 + 10);
   }
